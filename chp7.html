@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <font size="+2" face="Verdana, Geneva, sans-serif">Your details:</font>
+            </legend>
+            <font size="+2" face="Verdana, Geneva, sans-serif">
+                <label for="name">Name:
+                    <input type="text" name="name" required="required" /></label><br />
+                <label for="email">Email:
+                    <input type="email" name="email" required="required" /></label><br />
+            </font>
+        </fieldset><br>
+        <fieldset>
+            <legend>
+                <font size="+2" face="Verdana, Geneva, sans-serif">Your review:</font>
+            </legend>
+            <font size="+2" face="Verdana, Geneva, sans-serif">
+                <label>How did you hear about us?</label>
+                <select name="platform">
+                    <option value="google">Google</option>
+                    <option value="fb">Fb</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="email">Email</option>
+                    <option value="exemail">External Email</option>
+                </select>
+                <p>Would You visit again?
+                    <br />
+                    <input type="radio" name="visit" value="Yes" /> Yes
+                    <input type="radio" name="visit" value="No" />
+                    No
+                    <input type="radio" name="visit" value="maybe" />
+                    Maybe</p>
+                    <p>Comments<br>
+                    <textarea name="comments" cols="50" rows="4">
+                    </textarea>
+                </p>
+                <input type="checkbox" checked="checked"/> Sign me up for email updates<br/>
+                <input type="submit" value="Submit review"/>
+            </font>
+        </fieldset>
+    </form>
+</body>
+</html>
